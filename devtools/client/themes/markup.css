@@ -358,7 +358,7 @@ ul.children + .tag-line::before {
   width: 1ch;
   aspect-ratio: 1 / 1;
   margin-inline-end: 4px;
-  border-radius: 50%;
+  border-radius: var(--border-radius-circle);
   background-color: var(--badge-scrollable-active-background-color);
   /* Use an outline to avoid impacting the layout more */
   outline: 1px solid var(--badge-scrollable-active-color);
@@ -499,7 +499,7 @@ ul.children + .tag-line::before {
 .child.pseudoclass-locked::before {
   content: "";
   background: var(--markup-pseudoclass-disk-color);
-  border-radius: 50%;
+  border-radius: var(--border-radius-circle);
   width: 6px;
   height: 6px;
   margin-top: 5px;

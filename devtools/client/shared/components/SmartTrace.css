@@ -112,7 +112,7 @@
 .badge {
   background: var(--theme-toolbar-background-hover);
   color: var(--theme-body-color);
-  border-radius: 8px;
+  border-radius: var(--border-radius-medium);
   padding: 1px 4px;
   font-size: 0.9em;
   display: inline-block;

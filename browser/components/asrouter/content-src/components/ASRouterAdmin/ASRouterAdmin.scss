@@ -31,7 +31,7 @@
     .category {
       display: block;
       padding: 10px 14px;
-      border-radius: 4px;
+      border-radius: var(--border-radius-small);
       margin-inline-start: 20px;
       color: var(--in-content-page-color);
       text-decoration: none;
@@ -272,7 +272,7 @@
 
     .message-textarea {
       direction: ltr;
-      border-radius: 4px;
+      border-radius: var(--border-radius-small);
       width: auto;
       min-width: 400px;
       resize: vertical;
@@ -333,7 +333,7 @@
   .clearButton {
     border: 0;
     padding: 4px;
-    border-radius: 4px;
+    border-radius: var(--border-radius-small);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -464,7 +464,7 @@
 
         textarea {
           direction: ltr;
-          border-radius: 4px;
+          border-radius: var(--border-radius-small);
           width: auto;
           min-width: 400px;
           margin: 0;

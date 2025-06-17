@@ -6,7 +6,7 @@
   background: var(--theme-popup-background);
   color: var(--theme-popup-color);
   border: 1px solid var(--theme-popup-border-color);
-  border-radius: 4px;
+  border-radius: var(--border-radius-small);
   box-shadow: 0 4px 4px 0 var(--search-overlays-semitransparent);
   max-height: 300px;
   position: absolute;

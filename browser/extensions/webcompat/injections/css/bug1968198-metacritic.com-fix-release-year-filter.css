@@ -19,7 +19,7 @@
 .range-slider input[type="range"]::-moz-range-track {
   appearance: none;
   border: 0;
-  border-radius: 4px;
+  border-radius: var(--border-radius-small);
   box-shadow: none;
   cursor: pointer;
   height: 6px;

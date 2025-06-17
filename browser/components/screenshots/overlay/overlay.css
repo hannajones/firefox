@@ -71,7 +71,7 @@
   padding: 4px;
   background-color: var(--in-content-page-background);
   color: var(--in-content-text-color);
-  border-radius: 4px;
+  border-radius: var(--border-radius-small);
 }
 
 #selection-size {
@@ -173,7 +173,7 @@
   width: 10px;
   height: 14px;
   position: absolute;
-  border-radius: 100%;
+  border-radius: var(--border-radius-circle);
   overflow: hidden;
   inset-inline-start: 16px;
   top: 19px;
@@ -184,7 +184,7 @@
   width: 6px;
   height: 6px;
   background-color: #000;
-  border-radius: 50%;
+  border-radius: var(--border-radius-circle);
   inset-inline-start: 2px;
   top: 4px;
   z-index: var(--screenshots-high-layer);
@@ -345,7 +345,7 @@
 
 .mover {
   background-color: #fff;
-  border-radius: 50%;
+  border-radius: var(--border-radius-circle);
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
   transition: transform 125ms cubic-bezier(0.07, 0.95, 0, 1);
   position: relative;

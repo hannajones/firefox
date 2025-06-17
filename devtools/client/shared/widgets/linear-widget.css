@@ -54,7 +54,7 @@
   width: 10px;
   height: 10px;
   aspect-ratio: 1 / 1;
-  border-radius: 50%;
+  border-radius: var(--border-radius-circle);
   border: 2px solid var(--timing-function-preview-dot-border);
   background: var(--timing-function-line-color);
   /* We need to opt-out of forced color as --timing-function-line-color is

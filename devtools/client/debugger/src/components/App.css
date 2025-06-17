@@ -133,7 +133,7 @@ button:hover {
 }
 
 .rounded-circle {
-  border-radius: 50%;
+  border-radius: var(--border-radius-circle);
 }
 
 .text-white {
@@ -176,11 +176,11 @@ button:hover {
 }
 
 ::-webkit-scrollbar-track {
-  border-radius: 8px;
+  border-radius: var(--border-radius-medium);
   background: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
-  border-radius: 8px;
+  border-radius: var(--border-radius-medium);
   background: rgba(113, 113, 113, 0.5);
 }

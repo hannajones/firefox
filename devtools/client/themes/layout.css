@@ -67,7 +67,7 @@
   height: 12px;
   margin-inline-start: -1px;
   border: 1px solid var(--theme-highlight-gray);
-  border-radius: 50%;
+  border-radius: var(--border-radius-circle);
   cursor: pointer;
   display: inline-block;
   vertical-align: middle;

@@ -127,7 +127,7 @@
 .cubic-bezier-container .timing-function-preview .dot {
   width: 10px;
   height: 10px;
-  border-radius: 50%;
+  border-radius: var(--border-radius-circle);
   border: 2px solid var(--timing-function-preview-dot-border);
   background: var(--timing-function-line-color);
   /* opt-out of forced colors as --timing-function-line-color is using

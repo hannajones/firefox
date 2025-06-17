@@ -84,7 +84,7 @@
 .spectrum-color-preview {
   --overlay-color: transparent;
   border: 1px solid transparent;
-  border-radius: 50%;
+  border-radius: var(--border-radius-circle);
   width: 27px;
   height: 27px;
   background-color: #fff;
@@ -175,7 +175,7 @@ http://www.briangrinstead.com/blog/keep-aspect-ratio-with-html-and-css */
   width: 12px;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.6);
   background: #fff;
-  border-radius: 50%;
+  border-radius: var(--border-radius-circle);
   opacity: 0.9;
   border: none;
 }
@@ -211,7 +211,7 @@ http://www.briangrinstead.com/blog/keep-aspect-ratio-with-html-and-css */
   top: 0;
   left: 0;
   cursor: pointer;
-  border-radius: 50%;
+  border-radius: var(--border-radius-circle);
   height: 8px;
   width: 8px;
   border: 1px solid white;

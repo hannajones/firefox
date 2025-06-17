@@ -316,7 +316,7 @@
           overflow: hidden;
           border: 1px solid var(--fc-border);
           box-shadow: 0 2px 5px rgba(0, 0, 0, 15%);
-          border-radius: 4px;
+          border-radius: var(--border-radius-small);
           padding: var(--callout-padding, 16px);
           width: 25em;
           gap: 16px;
@@ -501,7 +501,7 @@
       .action-buttons .primary,
       .action-buttons .secondary,
       .dismiss-button {
-        border-radius: 4px;
+        border-radius: var(--border-radius-small);
 
         &:focus-visible {
           box-shadow: none;
@@ -574,7 +574,7 @@
           background-color: color-mix(in srgb, var(--fc-color) 25%, transparent);
           opacity: 1;
           transition: none;
-          border-radius: 8px;
+          border-radius: var(--border-radius-medium);
           display: flex;
           justify-content: flex-start;
           margin-block-end: 16px;
@@ -588,7 +588,7 @@
             height: 100%;
             background-color: var(--fc-accent-color);
             border: 0;
-            border-radius: 8px;
+            border-radius: var(--border-radius-medium);
             opacity: 1;
             transition: var(--progress-bar-transition);
           }
@@ -634,7 +634,7 @@
               }
 
               .check-empty {
-                border-radius: 50%;
+                border-radius: var(--border-radius-circle);
                 width: 0.75em;
                 height: 0.75em;
                 border: 2px solid color-mix(in srgb, var(--fc-color) 25%, transparent);
@@ -670,7 +670,7 @@
             margin-inline: 0;
             margin-block: 4px;
             border: none;
-            border-radius: 4px;
+            border-radius: var(--border-radius-small);
             padding-block: 8px;
           }
         }

@@ -66,7 +66,7 @@
     position: absolute;
     aspect-ratio: 1 / 1;
     width: 6px;
-    border-radius: 100%;
+    border-radius: var(--border-radius-circle);
     inset-inline-end: 4px;
     inset-block-end: 2px;
     background-color: var(--theme-icon-error-color);

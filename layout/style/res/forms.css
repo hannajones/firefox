@@ -872,7 +872,7 @@ input::-moz-reveal {
 input::-moz-search-clear-button {
   background-size: 1em;
   padding: 0.35em;
-  border-radius: 4px;
+  border-radius: var(--border-radius-small);
   margin-inline: 1px;
 }
 

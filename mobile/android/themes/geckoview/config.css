@@ -359,7 +359,7 @@ body {
   border: 0.15em solid currentColor;
   margin: 1em auto;
   border-right-color: transparent;
-  border-radius: 100%;
+  border-radius: var(--border-radius-circle);
   opacity: 0.8;
   animation: 1.1s linear infinite spin;
 }

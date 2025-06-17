@@ -398,7 +398,7 @@ tooltip {
       background-color: light-dark(#f9f9fb, #2b2a33);
       color: light-dark(black, white);
       border-color: light-dark(#67676c, #f9f9fb);
-      border-radius: 4px;
+      border-radius: var(--border-radius-small);
     }
   }
 }

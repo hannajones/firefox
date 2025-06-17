@@ -305,7 +305,7 @@ select.playback-rate-selector.devtools-button:not(:empty, :disabled, .checked):h
 .animation-delay-sign::before,
 .animation-end-delay-sign::before {
   background-color: inherit;
-  border-radius: 50%;
+  border-radius: var(--border-radius-circle);
   content: "";
   height: 6px;
   position: absolute;
@@ -577,7 +577,7 @@ select.playback-rate-selector.devtools-button:not(:empty, :disabled, .checked):h
 
 .keyframe-marker-item {
   box-shadow: 0 0 0 1px var(--keyframe-marker-shadow-color);
-  border-radius: 100%;
+  border-radius: var(--border-radius-circle);
   pointer-events: auto;
   position: absolute;
   top: 50%;

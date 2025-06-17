@@ -88,7 +88,7 @@
 
 .inspector-swatch {
   background-size: var(--swatch-size);
-  border-radius: 50%;
+  border-radius: var(--border-radius-circle);
   box-shadow: 0 0 0 1px light-dark(#c4c4c4, #818181);
 
   :root[forced-colors-active] &:not(:focus-visible) {
@@ -122,7 +122,7 @@
     0 0,
     calc(var(--swatch-size) / 2) calc(var(--swatch-size) / 2);
   position: absolute;
-  border-radius: 50%;
+  border-radius: var(--border-radius-circle);
   inset: 0;
   z-index: -1;
 }

@@ -79,7 +79,7 @@
   height: 5px;
   width: 5px;
   background-color: var(--purple-30);
-  border-radius: 100%;
+  border-radius: var(--border-radius-circle);
   outline: 1px solid var(--theme-sidebar-background);
   translate: 12px 10px;
 }

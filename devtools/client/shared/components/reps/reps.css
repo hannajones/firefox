@@ -51,7 +51,7 @@
 
 .objectBox-json-number .parsed-value {
   border: 1px solid;
-  border-radius: 4px;
+  border-radius: var(--border-radius-small);
   margin-inline-start: 8px;
   padding-inline: 2px;
   text-wrap: nowrap;

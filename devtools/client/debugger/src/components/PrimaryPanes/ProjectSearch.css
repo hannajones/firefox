@@ -112,7 +112,7 @@
     height: 5px;
     width: 5px;
     background-color: var(--blue-40);
-    border-radius: 100%;
+    border-radius: var(--border-radius-circle);
     outline: 1px solid var(--theme-sidebar-background);
     z-index: 1;
   }

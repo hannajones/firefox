@@ -22,7 +22,7 @@
   background-position:
     0 0,
     3px 3px;
-  border-radius: 50%;
+  border-radius: var(--border-radius-circle);
   width: calc(var(--base-unit) * 3);
   height: calc(var(--base-unit) * 3);
   margin-block-start: calc(var(--base-unit) * -0.5);

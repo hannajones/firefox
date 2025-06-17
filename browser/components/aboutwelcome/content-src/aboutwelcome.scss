@@ -353,7 +353,7 @@ html {
 
         .main-content {
           background-color: var(--mr-welcome-background-color);
-          border-radius: 8px;
+          border-radius: var(--border-radius-medium);
           box-shadow: 0 2px 14px rgba(58, 57, 68, 20%);
           padding: 44px 85px 20px;
 
@@ -406,7 +406,7 @@ html {
 
         .main-content {
           background-color: var(--in-content-page-background);
-          border-radius: 8px;
+          border-radius: var(--border-radius-medium);
           box-shadow: 0 2px 14px rgba(58, 57, 68, 20%);
           overflow: hidden;
 
@@ -473,7 +473,7 @@ html {
           display: flex;
           border: 1px solid var(--in-content-border-color);
           box-shadow: 0 1px 2px 0 var(--in-content-border-color);
-          border-radius: 4px;
+          border-radius: var(--border-radius-small);
           margin: 5px auto;
           text-align: start;
 
@@ -515,7 +515,7 @@ html {
           height: 1em;
           border: 3px solid var(--in-content-primary-button-text-color);
           border-bottom-color: transparent;
-          border-radius: 50%;
+          border-radius: var(--border-radius-circle);
           box-sizing: border-box;
           animation: rotation 1s linear infinite;
           justify-self: center;
@@ -592,7 +592,7 @@ html {
           box-shadow: 0 2px 14px 0 rgba(0, 0, 0, 20%);
           width: $split-section-width + $split-section-width;
           height: $split-screen-height;
-          border-radius: 8px;
+          border-radius: var(--border-radius-medium);
           inset: 0;
           margin: auto;
           pointer-events: none;
@@ -648,7 +648,7 @@ html {
         }
 
         .main-content {
-          border-radius: 0 8px 8px 0;
+          border-radius: 0 var(--border-radius-medium) var(--border-radius-medium) 0;
           overflow: hidden;
           padding-inline: 35px 20px;
           padding-block: 120px 0;
@@ -659,7 +659,7 @@ html {
           }
 
           &:dir(rtl) {
-            border-radius: 8px 0 0 8px;
+            border-radius: var(--border-radius-medium) 0 0 var(--border-radius-medium);
           }
 
           .legal-paragraph {
@@ -773,7 +773,7 @@ html {
               height: 1em;
               border: 3px solid var(--in-content-primary-button-text-color);
               border-bottom-color: transparent;
-              border-radius: 50%;
+              border-radius: var(--border-radius-circle);
               box-sizing: border-box;
               animation: rotation 1s linear infinite;
               justify-self: center;
@@ -870,7 +870,7 @@ html {
       .section-secondary {
         --mr-secondary-position: center center / auto 350px;
 
-        border-radius: 8px 0 0 8px;
+        border-radius: var(--border-radius-medium) 0 0 var(--border-radius-medium);
         margin: auto 0 auto auto;
         display: flex;
         align-items: center;
@@ -879,7 +879,7 @@ html {
         position: relative;
 
         &:dir(rtl) {
-          border-radius: 0 8px 8px 0;
+          border-radius: 0 var(--border-radius-medium) var(--border-radius-medium) 0;
           margin: auto;
           margin-inline-end: 0;
         }
@@ -999,10 +999,10 @@ html {
 
             margin: auto;
             margin-inline-end: 0;
-            border-radius: 8px 0 0 8px;
+            border-radius: var(--border-radius-medium) 0 0 var(--border-radius-medium);
 
             &:dir(rtl) {
-              border-radius: 0 8px 8px 0;
+              border-radius: 0 var(--border-radius-medium) var(--border-radius-medium) 0;
               margin: auto;
               margin-inline-end: 0;
             }
@@ -1011,10 +1011,10 @@ html {
           .section-secondary {
             margin: auto;
             margin-inline-start: 0;
-            border-radius: 0 8px 8px 0;
+            border-radius: 0 var(--border-radius-medium) var(--border-radius-medium) 0;
 
             &:dir(rtl) {
-              border-radius: 8px 0 0 8px;
+              border-radius: var(--border-radius-medium) 0 0 var(--border-radius-medium);
               margin: auto;
               margin-inline-start: 0;
             }
@@ -1039,10 +1039,10 @@ html {
 
             margin: auto;
             margin-inline-end: 0;
-            border-radius: 8px 0 0 8px;
+            border-radius: var(--border-radius-medium) 0 0 var(--border-radius-medium);
 
             &:dir(rtl) {
-              border-radius: 0 8px 8px 0;
+              border-radius: 0 var(--border-radius-medium) var(--border-radius-medium) 0;
               margin: auto;
               margin-inline-end: 0;
             }
@@ -1051,10 +1051,10 @@ html {
           .section-secondary {
             margin: auto;
             margin-inline-start: 0;
-            border-radius: 0 8px 8px 0;
+            border-radius: 0 var(--border-radius-medium) var(--border-radius-medium) 0;
 
             &:dir(rtl) {
-              border-radius: 8px 0 0 8px;
+              border-radius: var(--border-radius-medium) 0 0 var(--border-radius-medium);
               margin: auto;
               margin-inline-start: 0;
             }
@@ -1157,7 +1157,7 @@ html {
             flex-direction: row;
             border: 1px solid var(--in-content-border-color);
             box-shadow: 0 1px 2px 0 var(--in-content-border-color);
-            border-radius: 4px;
+            border-radius: var(--border-radius-small);
             margin-block: 0 16px;
             text-align: start;
             padding: 16px;
@@ -1251,7 +1251,7 @@ html {
             height: 1em;
             border: 3px solid var(--in-content-primary-button-text-color);
             border-bottom-color: transparent;
-            border-radius: 50%;
+            border-radius: var(--border-radius-circle);
             box-sizing: border-box;
             animation: rotation 1s linear infinite;
             justify-self: center;
@@ -1339,14 +1339,14 @@ html {
             flex-direction: column;
 
             .section-secondary {
-              border-radius: 8px 8px 0 0;
+              border-radius: var(--border-radius-medium) var(--border-radius-medium) 0 0;
               margin: auto;
               margin-bottom: 0;
 
               &:dir(rtl) {
                 margin: auto;
                 margin-bottom: 0;
-                border-radius: 8px 8px 0 0;
+                border-radius: var(--border-radius-medium) var(--border-radius-medium) 0 0;
               }
             }
 
@@ -1354,12 +1354,12 @@ html {
               height: auto;
               margin: auto;
               margin-top: 0;
-              border-radius: 0 0 8px 8px;
+              border-radius: 0 0 var(--border-radius-medium) var(--border-radius-medium);
 
               &:dir(rtl) {
                 margin: auto;
                 margin-top: 0;
-                border-radius: 0 0 8px 8px;
+                border-radius: 0 0 var(--border-radius-medium) var(--border-radius-medium);
               }
             }
           }
@@ -1373,7 +1373,7 @@ html {
             --mr-secondary-background-position-y: top;
             --mr-secondary-position: center var(--mr-secondary-background-position-y) / 75%;
 
-            border-radius: 8px 8px 0 0;
+            border-radius: var(--border-radius-medium) var(--border-radius-medium) 0 0;
             margin: auto;
             margin-bottom: 0;
             height: $small-secondary-section-height;
@@ -1397,7 +1397,7 @@ html {
             &:dir(rtl) {
               margin: auto;
               margin-bottom: 0;
-              border-radius: 8px 8px 0 0;
+              border-radius: var(--border-radius-medium) var(--border-radius-medium) 0 0;
             }
 
             &.with-secondary-section-hidden {
@@ -1432,16 +1432,16 @@ html {
 
               .main-content {
                 padding: 50px 0 0;
-                border-radius: 8px;
+                border-radius: var(--border-radius-medium);
 
                 &:dir(rtl) {
-                  border-radius: 8px;
+                  border-radius: var(--border-radius-medium);
                 }
               }
             }
 
             .main-content {
-              border-radius: 0 0 8px 8px;
+              border-radius: 0 0 var(--border-radius-medium) var(--border-radius-medium);
               padding: 30px 0 0;
 
               .main-content-inner {
@@ -1523,7 +1523,7 @@ html {
               margin-top: 0;
 
               .main-content {
-                border-radius: 0 0 8px 8px;
+                border-radius: 0 0 var(--border-radius-medium) var(--border-radius-medium);
               }
             }
           }
@@ -1542,10 +1542,10 @@ html {
 
               margin: auto;
               margin-inline-end: 0;
-              border-radius: 8px 0 0 8px;
+              border-radius: var(--border-radius-medium) 0 0 var(--border-radius-medium);
 
               &:dir(rtl) {
-                border-radius: 0 8px 8px 0;
+                border-radius: 0 var(--border-radius-medium) var(--border-radius-medium) 0;
                 margin: auto;
                 margin-inline-end: 0;
               }
@@ -1554,10 +1554,10 @@ html {
             .section-secondary {
               margin: auto;
               margin-inline-start: 0;
-              border-radius: 0 8px 8px 0;
+              border-radius: 0 var(--border-radius-medium) var(--border-radius-medium) 0;
 
               &:dir(rtl) {
-                border-radius: 8px 0 0 8px;
+                border-radius: var(--border-radius-medium) 0 0 var(--border-radius-medium);
                 margin: auto;
                 margin-inline-start: 0;
               }
@@ -1814,7 +1814,7 @@ html {
     &:hover,
     &:active,
     &:focus-within {
-      border-radius: 8px;
+      border-radius: var(--border-radius-medium);
       outline: 2px solid var(--in-content-primary-button-background);
     }
 
@@ -1860,7 +1860,7 @@ html {
 
         .flair {
           height: 18px;
-          border-radius: 4px;
+          border-radius: var(--border-radius-small);
           background-color: #9059FF;
           color: #FFF;
           padding: 2px 8px;
@@ -1908,7 +1908,7 @@ html {
       min-width: 50px;
       color: #000;
       box-shadow: none;
-      border-radius: 4px;
+      border-radius: var(--border-radius-small);
       cursor: pointer;
       z-index: 0;
 
@@ -1973,7 +1973,7 @@ html {
       &:hover,
       &:focus {
         background-color: rgba(217, 217, 227, 30%);
-        border-radius: 4px;
+        border-radius: var(--border-radius-small);
       }
     }
   }
@@ -2285,7 +2285,7 @@ html {
             }
 
             .picker-icon {
-              border-radius: 100%;
+              border-radius: var(--border-radius-circle);
               width: 27px;
               height: 27px;
               display: flex;
@@ -2662,7 +2662,7 @@ html {
     .yellow-circle {
       width: 165px;
       height: 165px;
-      border-radius: 50%;
+      border-radius: var(--border-radius-circle);
       transform: translate(230%, -5%);
       background: #952BB9;
       transition-delay: -0.2s;
@@ -2757,7 +2757,7 @@ html {
     .yellow-circle {
       width: 165px;
       height: 165px;
-      border-radius: 50%;
+      border-radius: var(--border-radius-circle);
       transform: translate(160%, 130%);
       background: #E7258C;
     }

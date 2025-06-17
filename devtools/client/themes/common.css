@@ -234,7 +234,7 @@ iframe {
 
 .devtools-autocomplete-listbox .autocomplete-swatch {
   cursor: pointer;
-  border-radius: 50%;
+  border-radius: var(--border-radius-circle);
   box-shadow: 0 0 0 1px #c4c4c4;
   width: var(--autocomplete-item-color-swatch-size);
   height: var(--autocomplete-item-color-swatch-size);
@@ -704,7 +704,7 @@ iframe {
   height: 1em;
   border: 2px solid currentColor;
   border-right-color: transparent;
-  border-radius: 50%;
+  border-radius: var(--border-radius-circle);
   animation: 1.1s linear throbber-spin infinite;
 }
 
@@ -860,7 +860,7 @@ html[dir="rtl"] .devtools-checkbox-toggle:checked {
   width: calc(1em - 0.3em);
   height: calc(1em - 0.3em);
   transform: translateY(0.15em) translateX(var(--x-pos));
-  border-radius: 100%;
+  border-radius: var(--border-radius-circle);
   display: block;
   content: "";
   background-color: var(--toggle-thumb-color);

@@ -532,7 +532,7 @@
   top: 0;
   left: 0;
   display: inline-block;
-  border-radius: 4px;
+  border-radius: var(--border-radius-small);
   padding: 4px;
   white-space: pre-line;
   font: var(--highlighter-font-family);
@@ -594,7 +594,7 @@
   cursor: none;
   width: var(--magnifier-width);
   height: var(--magnifier-height);
-  border-radius: 50%;
+  border-radius: var(--border-radius-circle);
   box-shadow: 0 0 0 3px var(--background-color);
   display: block;
 }
@@ -701,7 +701,7 @@
   box-shadow: var(--toolbar-box-shadow);
   background-color: var(--toolbar-background);
   border: 1px solid var(--toolbar-border);
-  border-radius: 4px;
+  border-radius: var(--border-radius-small);
 
   font: var(--highlighter-font-family);
   font-size: var(--highlighter-font-size);
