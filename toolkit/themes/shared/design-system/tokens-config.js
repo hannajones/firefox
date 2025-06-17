@@ -404,7 +404,7 @@ function formatVariables({ format, dictionary, outputReferences, formatting }) {
 // Easy way to grab variable values later for display.
 let variableLookupTable = {};
 
-function storybookJSFormat(args) {
+function tokenTablesFormat(args) {
   let dictionary = Object.assign({}, args.dictionary);
   let resolvedTokens = dictionary.allTokens.map(token => {
     let tokenVal = resolveReferences(dictionary, token.original);
@@ -425,10 +425,10 @@ function storybookJSFormat(args) {
       .trim()
       .replaceAll(/(^module\.exports\s*=\s*|\;$)/g, "")
   );
-  let storybookTables = formatTokensTablesData(parsedData);
+  let tokenTables = formatTokensTablesData(parsedData);
 
-  return `${customFileHeader({ platform: "storybook" })}
-  export const storybookTables = ${JSON.stringify(storybookTables)};
+  return `${customFileHeader({ platform: "token-tables" })}
+  export const tokenTables = ${JSON.stringify(tokenTables)};
 
   export const variableLookupTable = ${JSON.stringify(variableLookupTable)};
   `;
@@ -487,12 +487,19 @@ const SINGULAR_TABLE_CATEGORIES = [
   "space",
   "opacity",
   "outline",
-  "padding",
-  "margin",
 ];
 
 function getTableName(tokenName) {
-  let replacePattern = /^(button-|input-text-|focus-|checkbox-|table-row-)/;
+  if (tokenName.includes("page-main") || tokenName.includes("min-height")) {
+    return "size";
+  }
+
+  if (tokenName.includes("padding") || tokenName.includes("margin")) {
+    return "space";
+  }
+
+  let replacePattern =
+    /^(button-|input-text-|input-|focus-|checkbox-|table-row-|attention-dot-)/;
   if (tokenName.match(replacePattern)) {
     tokenName = tokenName.replace(replacePattern, "");
   }
@@ -508,7 +515,7 @@ module.exports = {
     "css/variables/shared": createDesktopFormat(),
     "css/variables/brand": createDesktopFormat("brand"),
     "css/variables/platform": createDesktopFormat("platform"),
-    "javascript/storybook": storybookJSFormat,
+    "javascript/token-tables": tokenTablesFormat,
     ...figmaConfig.formats,
   },
   platforms: {
@@ -542,7 +549,7 @@ module.exports = {
         },
       ],
     },
-    storybook: {
+    tables: {
       options: {
         outputReferences: true,
         showFileHeader: false,
@@ -553,8 +560,8 @@ module.exports = {
       ],
       files: [
         {
-          destination: "tokens-storybook.mjs",
-          format: "javascript/storybook",
+          destination: "token-tables.mjs",
+          format: "javascript/token-tables",
         },
       ],
     },

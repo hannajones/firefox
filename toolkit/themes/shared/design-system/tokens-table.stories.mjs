@@ -7,7 +7,7 @@ import {
   LitElement,
   classMap,
 } from "chrome://global/content/vendor/lit.all.mjs";
-import { storybookTables, variableLookupTable } from "./tokens-storybook.mjs";
+import { tokenTables, variableLookupTable } from "./token-tables.mjs";
 import styles from "./tokens-table.css";
 
 export default {
@@ -72,7 +72,7 @@ class TablesPage extends LitElement {
   constructor() {
     super();
     this.surface = "brand";
-    this.tokensData = storybookTables;
+    this.tokensData = tokenTables;
   }
 
   handleSurfaceChange(e) {
